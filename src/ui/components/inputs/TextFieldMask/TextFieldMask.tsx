@@ -5,12 +5,16 @@ import { OutlinedTextFieldProps } from "@material-ui/core";
 
 export interface TextFieldMaskProps extends OutlinedTextFieldProps {
   mask: string;
-  label: string;
 }
 
-const TextFieldMask: React.FC<TextFieldMaskProps> = ({ mask, ...props }) => {
+const TextFieldMask: React.FC<TextFieldMaskProps> = ({
+  mask,
+  value,
+  onChange,
+  ...props
+}) => {
   return (
-    <InputMask mask={mask}>
+    <InputMask mask={mask} value={value} onChange={onChange}>
       {() => {
         return <TextField {...props} />;
       }}
