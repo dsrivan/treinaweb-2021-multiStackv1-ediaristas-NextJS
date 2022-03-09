@@ -10,4 +10,9 @@ npm run dev
 yarn dev
 ```
 
+## For look the result.
+
+Click on the link in the upper right corner of this page, on about section.
+
+
 *** em construção
